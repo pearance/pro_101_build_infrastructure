@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Pro 101 build Infrastructure feature.
+ */
+
+include_once('pro_101_build_infrastructure.features.inc');
