@@ -143,5 +143,12 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm->value = 1;
   $export['module_filter_visual_aid'] = $strongarm;
 
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_content_enabled';
+  $strongarm->value = TRUE;
+  $export['node_content_enabled'] = $strongarm;
+
   return $export;
 }

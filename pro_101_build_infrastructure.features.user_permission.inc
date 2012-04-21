@@ -40,6 +40,12 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'roles' => array(),
   );
 
+  // Exported permission: edit node machine name
+  $permissions['edit node machine name'] = array(
+    'name' => 'edit node machine name',
+    'roles' => array(),
+  );
+
   // Exported permission: execute unlink files
   $permissions['execute unlink files'] = array(
     'name' => 'execute unlink files',
