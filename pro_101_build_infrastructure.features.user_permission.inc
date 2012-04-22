@@ -13,67 +13,105 @@ function pro_101_build_infrastructure_user_default_permissions() {
   // Exported permission: access administration menu
   $permissions['access administration menu'] = array(
     'name' => 'access administration menu',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'admin_menu',
   );
 
   // Exported permission: administer administration menu select
   $permissions['administer administration menu select'] = array(
     'name' => 'administer administration menu select',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'admin_select',
   );
 
   // Exported permission: administer features
   $permissions['administer features'] = array(
     'name' => 'administer features',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'features',
   );
 
   // Exported permission: administer module filter
   $permissions['administer module filter'] = array(
     'name' => 'administer module filter',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'module_filter',
   );
 
   // Exported permission: display drupal links
   $permissions['display drupal links'] = array(
     'name' => 'display drupal links',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'admin_menu',
   );
 
   // Exported permission: edit node machine name
   $permissions['edit node machine name'] = array(
     'name' => 'edit node machine name',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'defaultcontent',
   );
 
   // Exported permission: execute unlink files
   $permissions['execute unlink files'] = array(
     'name' => 'execute unlink files',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'features_tools',
   );
 
   // Exported permission: flush caches
   $permissions['flush caches'] = array(
     'name' => 'flush caches',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'admin_menu',
   );
 
   // Exported permission: manage features
   $permissions['manage features'] = array(
     'name' => 'manage features',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'features',
   );
 
   // Exported permission: select administration menu
   $permissions['select administration menu'] = array(
     'name' => 'select administration menu',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'admin_select',
   );
 
   // Exported permission: use admin toolbar
   $permissions['use admin toolbar'] = array(
     'name' => 'use admin toolbar',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'admin',
   );
 
   return $permissions;
