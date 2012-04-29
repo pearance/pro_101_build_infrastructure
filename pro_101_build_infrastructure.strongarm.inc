@@ -118,21 +118,6 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'checkbox_filter_pages';
-  $strongarm->value = 'admin/structure/views/*
-admin/structure/features/*';
-  $export['checkbox_filter_pages'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'checkbox_filter_visibilty';
-  $strongarm->value = '1';
-  $export['checkbox_filter_visibilty'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'module_filter_count_enabled';
   $strongarm->value = 1;
   $export['module_filter_count_enabled'] = $strongarm;
