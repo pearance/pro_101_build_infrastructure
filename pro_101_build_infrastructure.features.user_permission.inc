@@ -10,7 +10,7 @@
 function pro_101_build_infrastructure_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: access administration menu
+  // Exported permission: access administration menu.
   $permissions['access administration menu'] = array(
     'name' => 'access administration menu',
     'roles' => array(
@@ -20,7 +20,7 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
-  // Exported permission: administer administration menu select
+  // Exported permission: administer administration menu select.
   $permissions['administer administration menu select'] = array(
     'name' => 'administer administration menu select',
     'roles' => array(
@@ -29,7 +29,7 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'admin_select',
   );
 
-  // Exported permission: administer features
+  // Exported permission: administer features.
   $permissions['administer features'] = array(
     'name' => 'administer features',
     'roles' => array(
@@ -38,7 +38,7 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: administer module filter
+  // Exported permission: administer module filter.
   $permissions['administer module filter'] = array(
     'name' => 'administer module filter',
     'roles' => array(
@@ -47,13 +47,14 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'module_filter',
   );
 
-  // Exported permission: administer uuid
+  // Exported permission: administer uuid.
   $permissions['administer uuid'] = array(
     'name' => 'administer uuid',
     'roles' => array(),
+    'module' => 'uuid',
   );
 
-  // Exported permission: display drupal links
+  // Exported permission: display drupal links.
   $permissions['display drupal links'] = array(
     'name' => 'display drupal links',
     'roles' => array(
@@ -62,7 +63,7 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
-  // Exported permission: edit node machine name
+  // Exported permission: edit node machine name.
   $permissions['edit node machine name'] = array(
     'name' => 'edit node machine name',
     'roles' => array(
@@ -71,7 +72,7 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'defaultcontent',
   );
 
-  // Exported permission: execute unlink files
+  // Exported permission: execute unlink files.
   $permissions['execute unlink files'] = array(
     'name' => 'execute unlink files',
     'roles' => array(
@@ -80,7 +81,7 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'features_tools',
   );
 
-  // Exported permission: flush caches
+  // Exported permission: flush caches.
   $permissions['flush caches'] = array(
     'name' => 'flush caches',
     'roles' => array(
@@ -90,7 +91,7 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
-  // Exported permission: manage features
+  // Exported permission: manage features.
   $permissions['manage features'] = array(
     'name' => 'manage features',
     'roles' => array(
@@ -100,7 +101,7 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: select administration menu
+  // Exported permission: select administration menu.
   $permissions['select administration menu'] = array(
     'name' => 'select administration menu',
     'roles' => array(
@@ -110,7 +111,7 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'admin_select',
   );
 
-  // Exported permission: use admin toolbar
+  // Exported permission: use admin toolbar.
   $permissions['use admin toolbar'] = array(
     'name' => 'use admin toolbar',
     'roles' => array(

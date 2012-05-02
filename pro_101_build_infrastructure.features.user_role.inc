@@ -10,28 +10,28 @@
 function pro_101_build_infrastructure_user_default_roles() {
   $roles = array();
 
-  // Exported role: assistant
+  // Exported role: assistant.
   $roles['assistant'] = array(
     'name' => 'assistant',
     'weight' => '2',
     'machine_name' => 'assistant',
   );
 
-  // Exported role: developer
+  // Exported role: developer.
   $roles['developer'] = array(
     'name' => 'developer',
     'weight' => '5',
     'machine_name' => 'developer',
   );
 
-  // Exported role: professional
+  // Exported role: professional.
   $roles['professional'] = array(
     'name' => 'professional',
     'weight' => '3',
     'machine_name' => 'professional',
   );
 
-  // Exported role: support
+  // Exported role: support.
   $roles['support'] = array(
     'name' => 'support',
     'weight' => '4',
