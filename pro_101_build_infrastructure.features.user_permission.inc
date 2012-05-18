@@ -20,6 +20,15 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
+  // Exported permission: access record feature.
+  $permissions['access record feature'] = array(
+    'name' => 'access record feature',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'record_feature',
+  );
+
   // Exported permission: administer administration menu select.
   $permissions['administer administration menu select'] = array(
     'name' => 'administer administration menu select',
