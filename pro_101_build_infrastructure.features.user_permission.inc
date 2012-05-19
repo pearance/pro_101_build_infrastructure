@@ -20,15 +20,6 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
-  // Exported permission: access record feature.
-  $permissions['access record feature'] = array(
-    'name' => 'access record feature',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'record_feature',
-  );
-
   // Exported permission: administer administration menu select.
   $permissions['administer administration menu select'] = array(
     'name' => 'administer administration menu select',
@@ -45,15 +36,6 @@ function pro_101_build_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'features',
-  );
-
-  // Exported permission: administer module filter.
-  $permissions['administer module filter'] = array(
-    'name' => 'administer module filter',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'module_filter',
   );
 
   // Exported permission: administer uuid.
@@ -81,15 +63,6 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'defaultcontent',
   );
 
-  // Exported permission: execute unlink files.
-  $permissions['execute unlink files'] = array(
-    'name' => 'execute unlink files',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'features_tools',
-  );
-
   // Exported permission: flush caches.
   $permissions['flush caches'] = array(
     'name' => 'flush caches',
@@ -105,7 +78,6 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'name' => 'manage features',
     'roles' => array(
       0 => 'developer',
-      1 => 'support',
     ),
     'module' => 'features',
   );
@@ -115,7 +87,6 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'name' => 'select administration menu',
     'roles' => array(
       0 => 'developer',
-      1 => 'support',
     ),
     'module' => 'admin_select',
   );
@@ -128,6 +99,16 @@ function pro_101_build_infrastructure_user_default_permissions() {
       1 => 'support',
     ),
     'module' => 'admin',
+  );
+
+  // Exported permission: use tadaa.
+  $permissions['use tadaa'] = array(
+    'name' => 'use tadaa',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'tadaa',
   );
 
   return $permissions;

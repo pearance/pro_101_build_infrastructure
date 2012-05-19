@@ -22,11 +22,14 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'admin_menu_devel_modules_skip';
   $strongarm->value = array(
-    'admin_devel' => 0,
-    'devel' => 0,
-    'devel_node_access' => 0,
-    'field_ui' => 0,
-    'views_ui' => 0,
+    'admin_devel' => 'admin_devel',
+    'context_ui' => 'context_ui',
+    'devel' => 'devel',
+    'devel_node_access' => 'devel_node_access',
+    'field_ui' => 'field_ui',
+    'stringoverrides' => 'stringoverrides',
+    'views_ui' => 'views_ui',
+    'devel_themer' => 0,
   );
   $export['admin_menu_devel_modules_skip'] = $strongarm;
 
@@ -48,14 +51,14 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'admin_menu_tweak_modules';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['admin_menu_tweak_modules'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'admin_menu_tweak_permissions';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['admin_menu_tweak_permissions'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -149,6 +152,91 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm->name = 'node_content_enabled';
   $strongarm->value = TRUE;
   $export['node_content_enabled'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tadaa_development_modules';
+  $strongarm->value = array(
+    'filter_perms' => 1,
+    'context_ui' => 1,
+    'dblog' => 1,
+    'field_ui' => 1,
+    'devel' => 1,
+    'features_tools' => 1,
+    'record_feature' => 1,
+    'module_filter' => 1,
+    'stringoverrides' => 1,
+    'pro_101_dev_tools' => 1,
+    'views_ui' => 1,
+  );
+  $export['tadaa_development_modules'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tadaa_development_variables';
+  $strongarm->value = array(
+    'block_cache' => 0,
+    'cache' => 0,
+    'page_compression' => 0,
+    'preprocess_css' => 0,
+    'preprocess_js' => 0,
+    'maintenance_mode' => 1,
+    'error_level' => '2',
+  );
+  $export['tadaa_development_variables'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tadaa_environment';
+  $strongarm->value = 'development';
+  $export['tadaa_environment'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tadaa_environments';
+  $strongarm->value = array(
+    'development' => 'Maintenance (Offline)',
+    'production' => 'Live (Online)',
+  );
+  $export['tadaa_environments'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tadaa_production_modules';
+  $strongarm->value = array(
+    'filter_perms' => 0,
+    'context_ui' => 0,
+    'dblog' => 0,
+    'field_ui' => 0,
+    'devel' => 0,
+    'features_tools' => 0,
+    'record_feature' => 0,
+    'module_filter' => 0,
+    'stringoverrides' => 0,
+    'pro_101_dev_tools' => 0,
+    'views_ui' => 0,
+  );
+  $export['tadaa_production_modules'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tadaa_production_variables';
+  $strongarm->value = array(
+    'block_cache' => 1,
+    'cache' => 1,
+    'preprocess_js' => 1,
+    'page_compression' => 1,
+    'preprocess_css' => 1,
+    'maintenance_mode' => 0,
+    'error_level' => '0',
+  );
+  $export['tadaa_production_variables'] = $strongarm;
 
   return $export;
 }
