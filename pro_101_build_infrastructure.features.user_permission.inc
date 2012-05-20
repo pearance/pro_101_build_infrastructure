@@ -91,16 +91,6 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'admin_select',
   );
 
-  // Exported permission: use admin toolbar.
-  $permissions['use admin toolbar'] = array(
-    'name' => 'use admin toolbar',
-    'roles' => array(
-      0 => 'developer',
-      1 => 'support',
-    ),
-    'module' => 'admin',
-  );
-
   // Exported permission: use tadaa.
   $permissions['use tadaa'] = array(
     'name' => 'use tadaa',
