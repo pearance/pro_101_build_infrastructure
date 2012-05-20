@@ -99,28 +99,6 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'admin_toolbar';
-  $strongarm->value = array(
-    'layout' => 'vertical',
-    'position' => 'nw',
-    'behavior' => 'df',
-    'blocks' => array(
-      'admin_select-0' => -1,
-      'context_ui-editor' => -1,
-      'context_ui-devel' => -1,
-      'admin-create' => -1,
-      'admin-theme' => 1,
-      'admin-account' => -1,
-      'admin-menu' => 1,
-      'admin-devel' => -1,
-      'diff-inline' => -1,
-    ),
-  );
-  $export['admin_toolbar'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'module_filter_count_enabled';
   $strongarm->value = 1;
   $export['module_filter_count_enabled'] = $strongarm;
