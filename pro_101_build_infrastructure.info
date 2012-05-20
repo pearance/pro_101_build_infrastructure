@@ -48,7 +48,6 @@ features[variable][] = module_filter_visual_aid
 features[variable][] = node_content_enabled
 features[variable][] = tadaa_development_modules
 features[variable][] = tadaa_development_variables
-features[variable][] = tadaa_environment
 features[variable][] = tadaa_environments
 features[variable][] = tadaa_production_modules
 features[variable][] = tadaa_production_variables
