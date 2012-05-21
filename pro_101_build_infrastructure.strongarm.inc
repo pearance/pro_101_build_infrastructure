@@ -71,62 +71,6 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'admin_select_defaults';
-  $strongarm->value = array(
-    121011395 => array(
-      'admin_select_default' => 'admin_menu',
-      'weight' => '-5',
-    ),
-    160159362 => array(
-      'admin_select_default' => 'admin_menu',
-      'weight' => '-4',
-    ),
-    96220023 => array(
-      'admin_select_default' => 'toolbar',
-      'weight' => '-3',
-    ),
-    8998634 => array(
-      'admin_select_default' => 'toolbar',
-      'weight' => '-2',
-    ),
-    2 => array(
-      'admin_select_default' => 'toolbar',
-      'weight' => '-1',
-    ),
-  );
-  $export['admin_select_defaults'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'module_filter_count_enabled';
-  $strongarm->value = 1;
-  $export['module_filter_count_enabled'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'module_filter_dynamic_save_position';
-  $strongarm->value = 0;
-  $export['module_filter_dynamic_save_position'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'module_filter_tabs';
-  $strongarm->value = 1;
-  $export['module_filter_tabs'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'module_filter_visual_aid';
-  $strongarm->value = 1;
-  $export['module_filter_visual_aid'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'node_content_enabled';
   $strongarm->value = TRUE;
   $export['node_content_enabled'] = $strongarm;

@@ -14,19 +14,12 @@ function pro_101_build_infrastructure_user_default_permissions() {
   $permissions['access administration menu'] = array(
     'name' => 'access administration menu',
     'roles' => array(
-      0 => 'developer',
-      1 => 'support',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'admin_menu',
-  );
-
-  // Exported permission: administer administration menu select.
-  $permissions['administer administration menu select'] = array(
-    'name' => 'administer administration menu select',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'admin_select',
   );
 
   // Exported permission: administer features.
@@ -80,15 +73,6 @@ function pro_101_build_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'features',
-  );
-
-  // Exported permission: select administration menu.
-  $permissions['select administration menu'] = array(
-    'name' => 'select administration menu',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'admin_select',
   );
 
   // Exported permission: use tadaa.
