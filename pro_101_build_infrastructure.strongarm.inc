@@ -91,6 +91,7 @@ function pro_101_build_infrastructure_strongarm() {
     'module_filter' => 1,
     'stringoverrides' => 1,
     'pro_101_dev_tools' => 1,
+    'delta_ui' => 1,
     'omega_tools' => 1,
     'views_ui' => 1,
   );
@@ -137,6 +138,7 @@ function pro_101_build_infrastructure_strongarm() {
     'module_filter' => 0,
     'stringoverrides' => 0,
     'pro_101_dev_tools' => 0,
+    'delta_ui' => 0,
     'omega_tools' => 0,
     'views_ui' => 0,
   );
