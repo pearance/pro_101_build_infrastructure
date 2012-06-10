@@ -110,27 +110,6 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'rabbit_hole_action_featured';
-  $strongarm->value = '2';
-  $export['rabbit_hole_action_featured'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'rabbit_hole_redirect_featured';
-  $strongarm->value = '';
-  $export['rabbit_hole_redirect_featured'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'rabbit_hole_redirect_response_featured';
-  $strongarm->value = '301';
-  $export['rabbit_hole_redirect_response_featured'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'tadaa_development_modules';
   $strongarm->value = array(
     'filter_perms' => 1,
@@ -140,7 +119,6 @@ function pro_101_build_infrastructure_strongarm() {
     'devel' => 1,
     'features_tools' => 1,
     'record_feature' => 1,
-    'masquerade' => 1,
     'module_filter' => 1,
     'stringoverrides' => 1,
     'pro_101_dev_tools' => 1,
@@ -159,7 +137,6 @@ function pro_101_build_infrastructure_strongarm() {
     'cache' => 0,
     'page_compression' => 0,
     'preprocess_css' => 0,
-    'preprocess_js' => 0,
     'maintenance_mode' => 1,
     'error_level' => '2',
   );
@@ -187,7 +164,6 @@ function pro_101_build_infrastructure_strongarm() {
     'devel' => 0,
     'features_tools' => 0,
     'record_feature' => 0,
-    'masquerade' => 0,
     'module_filter' => 0,
     'stringoverrides' => 0,
     'pro_101_dev_tools' => 0,
@@ -204,7 +180,6 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm->value = array(
     'block_cache' => 1,
     'cache' => 1,
-    'preprocess_js' => 1,
     'page_compression' => 1,
     'preprocess_css' => 1,
     'maintenance_mode' => 0,

@@ -40,30 +40,11 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'masquerade',
   );
 
-  // Exported permission: administer rabbit hole.
-  $permissions['administer rabbit hole'] = array(
-    'name' => 'administer rabbit hole',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'rabbit_hole',
-  );
-
   // Exported permission: administer uuid.
   $permissions['administer uuid'] = array(
     'name' => 'administer uuid',
     'roles' => array(),
     'module' => 'uuid',
-  );
-
-  // Exported permission: bypass rabbit hole.
-  $permissions['bypass rabbit hole'] = array(
-    'name' => 'bypass rabbit hole',
-    'roles' => array(
-      0 => 'developer',
-      1 => 'support',
-    ),
-    'module' => 'rabbit_hole',
   );
 
   // Exported permission: display drupal links.
