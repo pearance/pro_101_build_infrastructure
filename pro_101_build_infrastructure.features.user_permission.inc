@@ -31,15 +31,6 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: administer masquerade.
-  $permissions['administer masquerade'] = array(
-    'name' => 'administer masquerade',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'masquerade',
-  );
-
   // Exported permission: administer uuid.
   $permissions['administer uuid'] = array(
     'name' => 'administer uuid',
@@ -82,25 +73,6 @@ function pro_101_build_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'features',
-  );
-
-  // Exported permission: masquerade as admin.
-  $permissions['masquerade as admin'] = array(
-    'name' => 'masquerade as admin',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'masquerade',
-  );
-
-  // Exported permission: masquerade as user.
-  $permissions['masquerade as user'] = array(
-    'name' => 'masquerade as user',
-    'roles' => array(
-      0 => 'developer',
-      1 => 'support',
-    ),
-    'module' => 'masquerade',
   );
 
   // Exported permission: use tadaa.
