@@ -71,9 +71,62 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'masquerade_admin_roles';
+  $strongarm->value = array(
+    160159362 => '160159362',
+    121011395 => '121011395',
+    1 => 0,
+    2 => 0,
+    8998634 => 0,
+    96220023 => 0,
+  );
+  $export['masquerade_admin_roles'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'masquerade_quick_switches';
+  $strongarm->value = array(
+    0 => '1',
+    1 => '2',
+    2 => '5',
+  );
+  $export['masquerade_quick_switches'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'masquerade_test_user';
+  $strongarm->value = 'support1';
+  $export['masquerade_test_user'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_content_enabled';
   $strongarm->value = TRUE;
   $export['node_content_enabled'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rabbit_hole_action_featured';
+  $strongarm->value = '2';
+  $export['rabbit_hole_action_featured'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rabbit_hole_redirect_featured';
+  $strongarm->value = '';
+  $export['rabbit_hole_redirect_featured'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rabbit_hole_redirect_response_featured';
+  $strongarm->value = '301';
+  $export['rabbit_hole_redirect_response_featured'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -85,9 +138,9 @@ function pro_101_build_infrastructure_strongarm() {
     'dblog' => 1,
     'field_ui' => 1,
     'devel' => 1,
-    'devel_themer' => 1,
     'features_tools' => 1,
     'record_feature' => 1,
+    'masquerade' => 1,
     'module_filter' => 1,
     'stringoverrides' => 1,
     'pro_101_dev_tools' => 1,
@@ -132,9 +185,9 @@ function pro_101_build_infrastructure_strongarm() {
     'dblog' => 0,
     'field_ui' => 0,
     'devel' => 0,
-    'devel_themer' => 0,
     'features_tools' => 0,
     'record_feature' => 0,
+    'masquerade' => 0,
     'module_filter' => 0,
     'stringoverrides' => 0,
     'pro_101_dev_tools' => 0,
