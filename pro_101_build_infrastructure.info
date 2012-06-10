@@ -1,7 +1,7 @@
 name = Pro 101 Build Infrastructure
 description = Minimum build environment.
 core = 7.x
-package = Pro 101 Infrastructure (G)
+package = Pro Infrastructure (G)
 version = 7.x-1.0
 project = pro_101_build_infrastructure
 dependencies[] = admin_menu
@@ -16,8 +16,6 @@ dependencies[] = strongarm
 dependencies[] = tadaa
 dependencies[] = uuid
 dependencies[] = uuid_features
-features[ctools][] = boxes:box:1
-features[ctools][] = context:context:3
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
 features[user_permission][] = access administration menu
