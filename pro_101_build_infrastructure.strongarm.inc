@@ -81,6 +81,7 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm->name = 'tadaa_development_modules';
   $strongarm->value = array(
     'filter_perms' => 1,
+    'context_inline_editor' => 1,
     'context_ui' => 1,
     'dblog' => 1,
     'field_ui' => 1,
@@ -128,6 +129,7 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm->name = 'tadaa_production_modules';
   $strongarm->value = array(
     'filter_perms' => 0,
+    'context_inline_editor' => 0,
     'context_ui' => 0,
     'dblog' => 0,
     'field_ui' => 0,
