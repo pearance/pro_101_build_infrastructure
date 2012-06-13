@@ -80,12 +80,12 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'shortcut_per_role';
   $strongarm->value = array(
-    1 => 'shortcut-set-3',
-    2 => 'shortcut-set-3',
-    8998634 => 'shortcut-set-3',
-    96220023 => 'shortcut-set-3',
-    160159362 => 'shortcut-set-2',
-    121011395 => 'shortcut-set-1',
+    1 => 'shortcut-set-1',
+    2 => 'shortcut-set-1',
+    8998634 => 'shortcut-set-4',
+    96220023 => 'shortcut-set-4',
+    160159362 => 'shortcut-set-3',
+    121011395 => 'shortcut-set-2',
   );
   $export['shortcut_per_role'] = $strongarm;
 
