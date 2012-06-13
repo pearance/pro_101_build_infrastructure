@@ -10,9 +10,9 @@
 function pro_101_build_infrastructure_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: shortcut-set-2:admin/config/development/tadaa/status/environments
-  $menu_links['shortcut-set-2:admin/config/development/tadaa/status/environments'] = array(
-    'menu_name' => 'shortcut-set-2',
+  // Exported menu link: shortcut-set-1:admin/config/development/tadaa/status/environments
+  $menu_links['shortcut-set-1:admin/config/development/tadaa/status/environments'] = array(
+    'menu_name' => 'shortcut-set-1',
     'link_path' => 'admin/config/development/tadaa/status/environments',
     'router_path' => 'admin/config/development/tadaa/status/environments',
     'link_title' => 'Site Mode',
