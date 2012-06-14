@@ -24,8 +24,38 @@ function pro_101_build_infrastructure_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-50',
   );
+  // Exported menu link: shortcut-set-1:admin/content
+  $menu_links['shortcut-set-1:admin/content'] = array(
+    'menu_name' => 'shortcut-set-1',
+    'link_path' => 'admin/content',
+    'router_path' => 'admin/content',
+    'link_title' => 'Find content',
+    'options' => array(),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-19',
+  );
+  // Exported menu link: shortcut-set-1:node/add
+  $menu_links['shortcut-set-1:node/add'] = array(
+    'menu_name' => 'shortcut-set-1',
+    'link_path' => 'node/add',
+    'router_path' => 'node/add',
+    'link_title' => 'Add content',
+    'options' => array(),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-20',
+  );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Add content');
+  t('Find content');
   t('Site Mode');
 
 
