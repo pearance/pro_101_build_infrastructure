@@ -13,5 +13,9 @@ function pro_101_build_infrastructure_shortcut_default_shortcut_set() {
     'set_name' => 'shortcut-set-1',
     'title' => 'Default',
   );
+  $shortcut_sets['shortcut-set-2'] = array(
+    'set_name' => 'shortcut-set-2',
+    'title' => 'Development',
+  );
   return $shortcut_sets;
 }
