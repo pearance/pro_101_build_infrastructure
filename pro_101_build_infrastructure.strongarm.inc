@@ -85,20 +85,6 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'shortcut_per_role';
-  $strongarm->value = array(
-    1 => 'shortcut-set-1',
-    2 => 'shortcut-set-1',
-    8998634 => 'shortcut-set-1',
-    96220023 => 'shortcut-set-1',
-    160159362 => 'shortcut-set-2',
-    121011395 => 'shortcut-set-2',
-  );
-  $export['shortcut_per_role'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'tadaa_development_modules';
   $strongarm->value = array(
     'filter_perms' => 1,

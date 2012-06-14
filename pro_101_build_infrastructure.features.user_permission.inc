@@ -31,15 +31,6 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: administer shortcut per role.
-  $permissions['administer shortcut per role'] = array(
-    'name' => 'administer shortcut per role',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'shortcut_per_role',
-  );
-
   // Exported permission: administer shortcuts.
   $permissions['administer shortcuts'] = array(
     'name' => 'administer shortcuts',
