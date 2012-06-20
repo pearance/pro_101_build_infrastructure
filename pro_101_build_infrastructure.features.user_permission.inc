@@ -31,29 +31,11 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: administer shortcuts.
-  $permissions['administer shortcuts'] = array(
-    'name' => 'administer shortcuts',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'shortcut',
-  );
-
   // Exported permission: administer uuid.
   $permissions['administer uuid'] = array(
     'name' => 'administer uuid',
     'roles' => array(),
     'module' => 'uuid',
-  );
-
-  // Exported permission: customize shortcut links.
-  $permissions['customize shortcut links'] = array(
-    'name' => 'customize shortcut links',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'shortcut',
   );
 
   // Exported permission: display drupal links.
@@ -91,15 +73,6 @@ function pro_101_build_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'features',
-  );
-
-  // Exported permission: switch shortcut sets.
-  $permissions['switch shortcut sets'] = array(
-    'name' => 'switch shortcut sets',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'shortcut',
   );
 
   // Exported permission: use tadaa.
