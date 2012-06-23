@@ -31,13 +31,6 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: administer uuid.
-  $permissions['administer uuid'] = array(
-    'name' => 'administer uuid',
-    'roles' => array(),
-    'module' => 'uuid',
-  );
-
   // Exported permission: display drupal links.
   $permissions['display drupal links'] = array(
     'name' => 'display drupal links',
