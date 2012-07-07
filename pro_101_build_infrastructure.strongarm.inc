@@ -78,6 +78,13 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'dummyimages_lorempixum_category';
+  $strongarm->value = 'random';
+  $export['dummyimages_lorempixum_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_content_enabled';
   $strongarm->value = TRUE;
   $export['node_content_enabled'] = $strongarm;
@@ -93,6 +100,7 @@ function pro_101_build_infrastructure_strongarm() {
     'field_ui' => 1,
     'devel' => 1,
     'dummyimage' => 1,
+    'lorempixum' => 1,
     'features_tools' => 1,
     'record_feature' => 1,
     'simplehtmldom' => 1,
@@ -142,6 +150,7 @@ function pro_101_build_infrastructure_strongarm() {
     'field_ui' => 0,
     'devel' => 0,
     'dummyimage' => 0,
+    'lorempixum' => 0,
     'features_tools' => 0,
     'record_feature' => 0,
     'simplehtmldom' => 0,
