@@ -15,9 +15,10 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'name' => 'access administration menu',
     'roles' => array(
       0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
+      1 => 'authenticated user',
+      2 => 'developer',
+      3 => 'professional',
+      4 => 'support',
     ),
     'module' => 'admin_menu',
   );
