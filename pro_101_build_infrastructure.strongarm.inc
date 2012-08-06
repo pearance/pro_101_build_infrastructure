@@ -128,6 +128,7 @@ function pro_101_build_infrastructure_strongarm() {
     'maintenance_mode' => 1,
     'error_level' => '2',
     'preprocess_js' => 0,
+    'devel_rebuild_theme_registry' => 1,
   );
   $export['tadaa_development_variables'] = $strongarm;
 
@@ -180,6 +181,7 @@ function pro_101_build_infrastructure_strongarm() {
     'maintenance_mode' => 0,
     'error_level' => '0',
     'preprocess_js' => 1,
+    'devel_rebuild_theme_registry' => 0,
   );
   $export['tadaa_production_variables'] = $strongarm;
 
