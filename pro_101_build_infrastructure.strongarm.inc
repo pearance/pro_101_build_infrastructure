@@ -34,6 +34,7 @@ function pro_101_build_infrastructure_strongarm() {
     'devel' => 'devel',
     'devel_node_access' => 'devel_node_access',
     'field_ui' => 'field_ui',
+    'rules_admin' => 'rules_admin',
     'stringoverrides' => 'stringoverrides',
     'views_ui' => 'views_ui',
     'devel_themer' => 0,
