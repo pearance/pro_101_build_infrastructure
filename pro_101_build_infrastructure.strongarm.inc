@@ -103,9 +103,9 @@ function pro_101_build_infrastructure_strongarm() {
     'dummyimage' => 1,
     'lorempixum' => 1,
     'features_tools' => 1,
-    'record_feature' => 1,
     'simplehtmldom' => 1,
     'masquerade_context' => 1,
+    'agrcache' => 0,
     'checklistapi' => 1,
     'masquerade' => 1,
     'module_filter' => 1,
@@ -125,13 +125,10 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm->name = 'tadaa_development_variables';
   $strongarm->value = array(
     'block_cache' => 0,
-    'cache' => 0,
-    'page_compression' => 0,
     'preprocess_css' => 0,
     'maintenance_mode' => 1,
     'error_level' => '2',
     'preprocess_js' => 0,
-    'devel_rebuild_theme_registry' => 1,
   );
   $export['tadaa_development_variables'] = $strongarm;
 
@@ -158,9 +155,9 @@ function pro_101_build_infrastructure_strongarm() {
     'dummyimage' => 0,
     'lorempixum' => 0,
     'features_tools' => 0,
-    'record_feature' => 0,
     'simplehtmldom' => 0,
     'masquerade_context' => 0,
+    'agrcache' => 1,
     'checklistapi' => 0,
     'masquerade' => 0,
     'module_filter' => 0,
@@ -180,13 +177,10 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm->name = 'tadaa_production_variables';
   $strongarm->value = array(
     'block_cache' => 1,
-    'cache' => 1,
-    'page_compression' => 1,
     'preprocess_css' => 1,
     'maintenance_mode' => 0,
     'error_level' => '0',
     'preprocess_js' => 1,
-    'devel_rebuild_theme_registry' => 0,
   );
   $export['tadaa_production_variables'] = $strongarm;
 
