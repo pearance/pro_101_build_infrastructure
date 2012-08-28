@@ -21,7 +21,7 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'admin_menu_cache_client';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['admin_menu_cache_client'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -106,11 +106,9 @@ function pro_101_build_infrastructure_strongarm() {
     'simplehtmldom' => 1,
     'masquerade_context' => 1,
     'agrcache' => 0,
-    'checklistapi' => 1,
     'masquerade' => 1,
     'module_filter' => 1,
     'stringoverrides' => 1,
-    'pro_101_qa_checklist' => 1,
     'pro_101_support_mode' => 1,
     'rules_admin' => 1,
     'delta_ui' => 1,
@@ -158,11 +156,9 @@ function pro_101_build_infrastructure_strongarm() {
     'simplehtmldom' => 0,
     'masquerade_context' => 0,
     'agrcache' => 1,
-    'checklistapi' => 0,
     'masquerade' => 0,
     'module_filter' => 0,
     'stringoverrides' => 0,
-    'pro_101_qa_checklist' => 0,
     'pro_101_support_mode' => 0,
     'rules_admin' => 0,
     'delta_ui' => 0,
