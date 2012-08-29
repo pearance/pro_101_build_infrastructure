@@ -79,13 +79,6 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'dummyimages_lorempixum_category';
-  $strongarm->value = 'random';
-  $export['dummyimages_lorempixum_category'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'node_content_enabled';
   $strongarm->value = TRUE;
   $export['node_content_enabled'] = $strongarm;
@@ -100,8 +93,6 @@ function pro_101_build_infrastructure_strongarm() {
     'dblog' => 1,
     'field_ui' => 1,
     'devel' => 1,
-    'dummyimage' => 1,
-    'lorempixum' => 1,
     'features_tools' => 1,
     'simplehtmldom' => 1,
     'masquerade_context' => 1,
@@ -109,6 +100,7 @@ function pro_101_build_infrastructure_strongarm() {
     'masquerade' => 1,
     'module_filter' => 1,
     'stringoverrides' => 1,
+    'pro_101_development_mode' => 1,
     'pro_101_support_mode' => 1,
     'rules_admin' => 1,
     'delta_ui' => 1,
@@ -135,8 +127,9 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'tadaa_environments';
   $strongarm->value = array(
-    'development' => 'Maintenance (Offline)',
+    'development' => 'Development (Offline)',
     'production' => 'Live (Online)',
+    'support' => 'Support (Offline)',
   );
   $export['tadaa_environments'] = $strongarm;
 
@@ -150,8 +143,6 @@ function pro_101_build_infrastructure_strongarm() {
     'dblog' => 0,
     'field_ui' => 0,
     'devel' => 0,
-    'dummyimage' => 0,
-    'lorempixum' => 0,
     'features_tools' => 0,
     'simplehtmldom' => 0,
     'masquerade_context' => 0,
@@ -159,6 +150,7 @@ function pro_101_build_infrastructure_strongarm() {
     'masquerade' => 0,
     'module_filter' => 0,
     'stringoverrides' => 0,
+    'pro_101_development_mode' => 0,
     'pro_101_support_mode' => 0,
     'rules_admin' => 0,
     'delta_ui' => 0,
@@ -179,6 +171,45 @@ function pro_101_build_infrastructure_strongarm() {
     'preprocess_js' => 1,
   );
   $export['tadaa_production_variables'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tadaa_support_modules';
+  $strongarm->value = array(
+    'filter_perms' => 0,
+    'context_ui' => 0,
+    'dblog' => 1,
+    'field_ui' => 0,
+    'devel' => 1,
+    'features_tools' => 0,
+    'simplehtmldom' => 1,
+    'masquerade_context' => 1,
+    'agrcache' => 0,
+    'masquerade' => 1,
+    'module_filter' => 0,
+    'stringoverrides' => 0,
+    'pro_101_development_mode' => 0,
+    'pro_101_support_mode' => 1,
+    'rules_admin' => 0,
+    'delta_ui' => 1,
+    'omega_tools' => 1,
+    'views_ui' => 0,
+  );
+  $export['tadaa_support_modules'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tadaa_support_variables';
+  $strongarm->value = array(
+    'block_cache' => '0',
+    'error_level' => '2',
+    'maintenance_mode' => 1,
+    'preprocess_css' => 0,
+    'preprocess_js' => 0,
+  );
+  $export['tadaa_support_variables'] = $strongarm;
 
   return $export;
 }
