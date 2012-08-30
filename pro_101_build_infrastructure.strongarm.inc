@@ -116,7 +116,7 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm->value = array(
     'block_cache' => 0,
     'preprocess_css' => 0,
-    'maintenance_mode' => 1,
+    'maintenance_mode' => 0,
     'error_level' => '2',
     'preprocess_js' => 0,
   );
@@ -178,7 +178,7 @@ function pro_101_build_infrastructure_strongarm() {
   $strongarm->name = 'tadaa_support_modules';
   $strongarm->value = array(
     'filter_perms' => 0,
-    'context_ui' => 0,
+    'context_ui' => 1,
     'dblog' => 1,
     'field_ui' => 0,
     'devel' => 1,
