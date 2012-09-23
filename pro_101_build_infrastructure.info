@@ -15,6 +15,7 @@ dependencies[] = menu
 dependencies[] = role_export
 dependencies[] = strongarm
 dependencies[] = tadaa
+dependencies[] = views
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
 features[user_permission][] = access administration menu
