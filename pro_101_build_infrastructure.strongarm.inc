@@ -105,7 +105,7 @@ function pro_101_build_infrastructure_strongarm() {
     'pro_101_support_mode' => 1,
     'rules_admin' => 1,
     'delta_ui' => 1,
-    'omega_tools' => 1,
+    'omega_tools' => 0,
     'views_ui' => 1,
   );
   $export['tadaa_development_modules'] = $strongarm;
@@ -196,7 +196,7 @@ function pro_101_build_infrastructure_strongarm() {
     'pro_101_support_mode' => 1,
     'rules_admin' => 0,
     'delta_ui' => 1,
-    'omega_tools' => 0,
+    'omega_tools' => 1,
     'views_ui' => 0,
   );
   $export['tadaa_support_modules'] = $strongarm;
