@@ -46,6 +46,7 @@ function pro_101_build_infrastructure_user_default_permissions() {
     'name' => 'edit node machine name',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'defaultcontent',
   );
