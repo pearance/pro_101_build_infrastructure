@@ -31,6 +31,7 @@ features[user_role][] = professional
 features[user_role][] = support
 features[variable][] = actions
 features[variable][] = admin_menu_cache_client
+features[variable][] = admin_menu_components
 features[variable][] = admin_menu_devel_modules_skip
 features[variable][] = admin_menu_margin_top
 features[variable][] = admin_menu_position_fixed
